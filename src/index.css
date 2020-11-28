@@ -1,3 +1,16 @@
+:root {
+  --orange-1: #F26D26;
+  --orange-2: #F99D3A;
+  --orange-3: #F4ED9F;
+
+  --blue-1: #195D81;
+  --blue-2: #1C9CD3;
+  --blue-3: #7ED2EF;
+
+  --green-1: #4A9C72;
+  --green-2: #85C55A;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +18,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-size: 16px;
 }
