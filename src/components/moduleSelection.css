@@ -1,0 +1,30 @@
+.modulesSelection {
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modulesDisplay {
+    width: 33.33%;
+    padding-top: 22.22%;
+
+    position: relative;
+}
+
+.modulesCard {
+    width: 95%;
+    height: 95%;
+
+    position: absolute;
+
+    top: 2.5%;
+    right: 2.5%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 0.5em;
+
+    
+}

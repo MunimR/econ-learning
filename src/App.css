@@ -3,7 +3,9 @@
 
   overflow: hidden;
 
-  padding: 1em 7.5% 0.5em 7.5%;
+  padding: var(--global-pad);
+  padding-top: 1em;
+  padding-bottom: 0.5em;
 
   background-color: var(--blue-2);
 
@@ -71,11 +73,15 @@
 }
 
 .content {
-  padding: 0 7.5%;
+  padding: var(--content-pad);
 }
 
 .footer {
   background-color: var(--orange-3);
   
   min-height: 6em;
+
+  padding: var(--global-pad);
+
+  display: none;
 }

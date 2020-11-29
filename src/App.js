@@ -1,4 +1,7 @@
 import './App.css';
+import Home from './pages/Home.js';
+import Modules from './pages/Modules.js';
+import Profile from './pages/Profile.js';
 
 import {
   BrowserRouter as Router,
@@ -17,18 +20,18 @@ function App() {
         <h2>logo</h2>
         <div className="links">
           <Link to="/">Home</Link>
-          <Link to="/module">Module</Link>
+          <Link to="/modules">Modules</Link>
           <Link to="/profile">Profile</Link>
         </div>
       </div>
       
       <div className="content">
         <Switch>
-          <Route path="/module">
-            <About/>
+          <Route path="/modules">
+            <Modules/>
           </Route>
           <Route path="/profile">
-            <Users/>
+            <Profile/>
           </Route>
           <Route path="/">
             <Home/>
@@ -40,22 +43,11 @@ function App() {
 
 
       <div className="footer">
+        Munim Rahman
       </div>
 
     </div>
-  );
-}
-
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
+  )
 }
 
 export default App;

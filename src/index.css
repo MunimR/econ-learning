@@ -9,6 +9,17 @@
 
   --green-1: #4A9C72;
   --green-2: #85C55A;
+
+  --global-pad: 0 10%;
+  --content-pad: 0 20%;
+}
+
+
+@media (max-width: 480px) {
+  :root {
+    --global-pad: 0 2%;
+    --content-pad: 0 5%;
+  }
 }
 
 body {
