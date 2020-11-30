@@ -7,7 +7,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
 } from "react-router-dom";
 
 function App() {
@@ -25,29 +25,28 @@ function App() {
         </div>
       </div>
       
-      <div className="content">
-        <Switch>
-          <Route path="/modules">
-            <Modules/>
-          </Route>
-          <Route path="/profile">
-            <Profile/>
-          </Route>
-          <Route path="/">
-            <Home/>
-          </Route>
-        </Switch>
-      </div>
+      <Switch>
+        <Route path="/modules">
+          <Modules/>
+        </Route>
+        <Route path="/profile">
+          <Profile/>
+        </Route>
+        <Route path="/">
+          <Home/>
+        </Route>
+      </Switch>
       
       </Router>
 
 
       <div className="footer">
-        Munim Rahman
+        footer area
       </div>
 
     </div>
   )
 }
+
 
 export default App;
