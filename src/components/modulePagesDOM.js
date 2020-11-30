@@ -15,6 +15,12 @@ import './modulePages.css';
 export default function ModulePagesDOM() {
     let { module, page } = useParams();
 
+    module = parseInt(module);
+
+    if (modulesData[module] === undefined) {
+      return <Redirect to={`/modules`}/>;
+    }
+
     if (page === undefined) {
         page = 0;
     }
@@ -55,7 +61,7 @@ function BottomNavGen(props) {
       return (<div className="bottomNavigation">
         <h4><Link to={`/modules/${module}/${pages - 1}`} replace>Previous Page</Link></h4>
         <p>Page {pages + 1}/{len}</p>
-        <h4>Next Page</h4>
+        <h4>Start Quiz</h4>
       </div>)
     }
 
