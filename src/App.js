@@ -16,7 +16,7 @@ function App() {
       
       <Router>
 
-      <div className="navigation">  
+      <div className="navigation">
         <h2>logo</h2>
         <div className="links">
           <Link to="/">Home</Link>
